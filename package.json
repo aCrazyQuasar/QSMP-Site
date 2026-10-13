@@ -1,0 +1,16 @@
+{
+  "name": "qsmp-site",
+  "version": "1.0.0",
+  "description": "This is the full website code for the Quasar SMP. Basically, it just asks this [specific plugin](https://www.example.com) for a bunch of data on the serve and displays it if logged in. thats about it for now.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.3.0"
+  }
+}
