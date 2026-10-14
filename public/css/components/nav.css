@@ -4,6 +4,7 @@ nav{
     background-color: var(--surface-color);
     padding: 10px 5%;
     box-sizing: border-box;
+    height: 5rem;
 
     display: flex;
     justify-content: space-between;
