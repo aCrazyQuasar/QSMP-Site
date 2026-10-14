@@ -1,0 +1,37 @@
+:root{
+    --base-color: #080B0E;
+    --base-light: #11171D;
+    --base-lighter: #202A33;
+
+    --surface-color: #495867;
+    --surface-light: #5E6C7A;
+    --surface-lighter: #75828E;
+
+    --text-color: #EEEEEE;
+    --text-darker: #C8C8C8;
+    --text-muted: #9CA3AF;
+
+    --brand-color: #2A9D8F;
+    --brand-dark: #218477;
+    --brand-darker: #17665C;
+    --brand-light: #52B6A9;
+    --brand-lighter: #83D0C5;
+
+    --accent-color: #FF8552;
+    --accent-dark: #E66C3A;
+    --accent-darker: #B84D25;
+    --accent-light: #FFA27B;
+    --accent-lighter: #FFC2A8;
+
+    --font-decorative: "Minecraft Ten", sans-serif;
+    --font-decorative-2: "Minecraft Regular", serif;
+    --font-legible: "BPMF Huninn", sans-serif;
+
+    --border-round-large: 20px;
+    --border-round-medium: 10px;
+    --border-round-small: 5px;
+
+    --shadow-large: 0 0 20px rgba(0, 0, 0, 0.2);
+    --shadow-medium: 0 0 10px rgba(0, 0, 0, 0.1);
+    --shadow-small: 0 0 5px rgba(0, 0, 0, 0.05);
+}

@@ -1,0 +1,116 @@
+nav{
+    width: 100%;
+    max-width: 100vw;
+    background-color: var(--surface-color);
+    padding: 10px 5%;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    user-select: none;
+}
+nav .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+nav .logo img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: var(--border-round-medium);
+}
+nav .nav-group{
+    display: contents;
+}
+nav .nav-links,
+nav .nav-btns{
+    list-style: none;
+    list-style-type: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+nav .nav-link, 
+nav .nav-btn{
+    text-decoration: none;
+    font-size: 1.15rem;
+    font-family: var(--font-decorative-2);
+}
+nav .nav-link:hover{
+    text-decoration: underline;
+}
+nav .nav-btn{
+    padding: 0.75rem 1.5rem;
+    background-color: var(--brand-dark);
+    border-radius: var(--border-round-small);
+}
+#sidebar-check,
+#sidebar-close,
+#sidebar-open,
+#sidebar-overlay{
+    display: none;
+}
+
+@media(max-width: 1000px) {
+    #sidebar-open,
+    #sidebar-close{
+        display: block;
+        cursor: pointer;
+    }
+    #sidebar-close{
+        padding: 1rem 1.5rem;
+    }
+    nav .nav-group{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        box-sizing: border-box;
+
+        background-color: var(--surface-color);
+
+        width: 300px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        transform: translateX(300px);
+        transition: 0.3s ease;
+    }
+    #sidebar-check:checked ~ .nav-group{
+        transform: translateX(0);
+    }
+    nav .nav-links,
+    nav .nav-btns{
+        display: contents;
+    }
+    nav .nav-link,
+    nav .nav-btn{
+        width: 300px;
+        background-color: var(--surface-color);
+        color: var(--text-darker);
+        padding: 1rem 1.5rem;
+        display: block;
+    }
+    nav .nav-link:hover,
+    nav .nav-btn:hover{
+        text-decoration: none;
+        background-color: var(--brand-dark);
+    }
+    #sidebar-overlay{
+        display: none;
+    }
+    #sidebar-check:checked ~ #sidebar-overlay{
+        display: block;
+        position: fixed;
+        inset: 0;
+        background-color: color-mix(in srgb, var(--base-color), transparent);
+    }
+}

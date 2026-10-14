@@ -1,0 +1,8 @@
+/* ! RESET */
+@import "./base/reset.css";
+@import "./base/typography.css";
+@import "./base/variables.css";
+
+/* ! COMPONENTS */
+@import "./components/footer.css";
+@import "./components/nav.css";

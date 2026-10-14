@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Bpmf+Huninn&display=swap');
+@font-face {
+    font-family: "Minecraft Ten";
+    src: url("/assets/fonts/Minecraft-Ten.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Minecraft Regular";
+    src: url("/assets/fonts/Minecraft-Regular.otf") format("opentype");
+}
+h1, h2, h3, h4, h5, h6{
+    color: var(--text-color);
+}
+h1, h2, h3{
+    font-family: "Minecraft Ten", sans-serif;
+}
+h4, h5, h6{
+    font-family: "Minecraft Regular", serif;
+}
+h1{
+    font-size: 3.5rem;
+}
+h2{
+    font-size: 2.5rem;
+}
+h3{
+    font-size: 2rem;
+}
+h4{
+    font-size: 1.5rem;
+}
+h5{
+    font-size: 1.25rem;
+}
+h6{
+    font-size: 1.125rem;
+}
+
+p, a, span, li, div{
+    font-family: "BPMF Huninn", sans-serif;
+    color: var(--text-darker);
+}
