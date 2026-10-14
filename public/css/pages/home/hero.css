@@ -12,14 +12,29 @@ header .text{
     left: 50%;
     transform: translateX(-50%);
     width: min(800px, 90vw);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
 }
 header .text h1{
     line-height: 1.1;
     letter-spacing: -0.5px;
+    text-align: center;
 }
 header .text h1 span{
     font-family: var(--font-decorative);
-    background: linear-gradient(135deg, var(--brand-color), #ff7e5f);
+    color: var(--brand-color);
+    /* background: linear-gradient(135deg, var(--brand-color), var(--accent-color));
+    background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; */
+}
+header .text p{
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+    text-wrap: pretty;
 }
