@@ -16,16 +16,15 @@ footer .social-links{
 }
 footer .social-link{
     border: 1px solid var(--text-darker);
-    border-radius: var(--border-round-small);
-    padding: 1rem 2rem;
+    border-radius: var(--border-round-large);
+    padding: 0.75rem 1.5rem;
     text-decoration: none;
 
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    gap: 5px;
-    width: 75px;
+    gap: 10px;
+    /* width: 75px; */
     transition: 150ms ease;
 }
 footer .social-link:hover{
@@ -39,8 +38,8 @@ footer .social-link:hover h6{
     color: var(--brand-color);
 }
 footer .social-link svg{
-    width: 50px;
-    aspect-ratio: 1/1;
+    width: 25px;
+    height: 25px;
     fill: var(--text-darker);
 }
 footer .social-link:hover svg{
