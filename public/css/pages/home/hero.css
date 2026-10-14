@@ -1,3 +1,25 @@
 header{
-    
+    width: min(1500px, 100vw);
+    height: calc(100vh - 5rem);
+    box-sizing: border-box;
+    border: 10px solid red;
+    margin: 0 auto;
+    position: relative;
+}
+header .text{
+    position: absolute;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(800px, 90vw);
+}
+header .text h1{
+    line-height: 1.1;
+    letter-spacing: -0.5px;
+}
+header .text h1 span{
+    font-family: var(--font-decorative);
+    background: linear-gradient(135deg, var(--brand-color), #ff7e5f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
