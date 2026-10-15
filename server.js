@@ -11,6 +11,7 @@ import path from "path";
 
 // Routes
 import authRouter from "./routes/auth.js";
+import apiRouter from "./routes/api.js";
 
 // Init Express
 const app = express();
@@ -42,6 +43,7 @@ app.use(
 
 // Routes used
 app.use("/auth", authRouter);
+app.use("/api", apiRouter);
 
 // Listen to me
 app.listen(PORT, () => {

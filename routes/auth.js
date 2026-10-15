@@ -1,5 +1,6 @@
 import { Router } from "express";
 import crypto from "node:crypto";
+import Logger from "../utils/logger.js";
 
 const router = Router();
 
@@ -143,6 +144,25 @@ router.get("/discord/callback", async (req, res) => {
         console.error("Discord login error:", error);
         res.status(502).send("Could not contact Discord.");
     }
+});
+router.post("/logout", (req, res, next) => {
+    req.session.destroy((err) => {
+        if (err) {
+            return next(err);
+        }
+
+        res.clearCookie("quasar.sid", {
+            httpOnly: true,
+            secure: process.env.NODE_ENV === "production",
+            sameSite: "lax",
+            path: "/"
+        });
+
+        res.status(200).json({
+            success: true,
+            message: "Logged out successfully."
+        });
+    });
 });
 
 export default router;
