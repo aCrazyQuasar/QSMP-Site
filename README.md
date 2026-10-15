@@ -1,6 +1,6 @@
 # The Quasar SMP Website
 
-This is the full website code for the Quasar SMP. Basically, it just asks this [specific plugin](https://www.example.com) for a bunch of data on the serve and displays it if logged in. thats about it for now.
+This is the full website code for the Quasar SMP. Basically, it just asks this [specific plugin](https://www.example.com) for a bunch of data on the server and displays it if logged in. Thats about it for now.
 
 ## Project Structure
 To start the website run `server.js` and it should run. Most stylistic customizations can me made in `/public/css/base/variables.css` and 
